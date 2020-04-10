@@ -23,7 +23,7 @@ function ClassicModule:OnEnable ()
 
    -- Store RCLootCouncil Variables
    self.RCLootCouncil = {}
-   self.RCLootCouncil.version = addon.version
+   self.RCLootCouncil.version = addon.version or "2.18.3"
    self.RCLootCouncil.tVersion = addon.tVersion
    addon.version = self.version
    addon.tVersion = self.tVersion or addon.tVersion -- Use our test version to benefit from test code
